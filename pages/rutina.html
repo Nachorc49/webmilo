@@ -3,56 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>✨✨Milo Web✨✨ </title>
 </head>
 <body>
     <header>
-
-        <div class="logo">
-            <img src="../images/IMG_7.jpg" alt="Logo Milo">
-        </div>
-
-        <div>
-            <h1>✨✨MILO✨✨</h1>
-            <h2>Un torbellino de energía y ternura en cuatro patas</h2>
-        </div>    
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobremilo.html">Sobre Milo</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./rutina.html">Rutina</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-
-            </ul>
-
-        </nav>    
-
+        <h1>✨✨MILO✨✨ </h1>
+        <nav class="navbar navbar-expand-lg color">
+            <div class="container-fluid">
+              <a class="logo navbar-brand" href="#"><img  src="../images/IMG_5.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn-custom active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn-custom" href="galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn-custom" href="sobremilo.html">Sobre Milo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn-custom" href="rutina.html">Rutina</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn-custom" href="contacto.html">Contacto</a>
+                      </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 <hr>
 
-    <main>
-        <h2>Rutina diaria de Milo</h2>
-        <ul class="rutina">
-            <li><strong>7:00 AM:</strong> Despertarse lleno de energía y salir a dar un paseo matutino por el parque.</li>
-            <li><strong>8:00 AM:</strong> Desayuno delicioso, generalmente croquetas con pollo.</li>
-            <li><strong>10:00 AM:</strong> Tiempo de juego: correr detrás de la pelota y explorar el jardín.</li>
-            <li><strong>12:00 PM:</strong> Hora de la siesta, se acurruca en su cama favorita hasta la hora de comer.</li>
-            <li><strong>2:00 PM:</strong> Almuerzo ligero seguido de un paseo corto por el vecindario.</li>
-            <li><strong>4:00 PM:</strong> Más tiempo de juego, esta vez con su juguete favorito: una cuerda de nudos.</li>
-            <li><strong>6:00 PM:</strong> Descanso y mimos, se acurruca con la familia en el sofá.</li>
-            <li><strong>8:00 PM:</strong> Cena y otro paseo rápido antes de prepararse para dormir.</li>
-            <li><strong>9:30 PM:</strong> Hora de dormir, se acomoda en su cama con su peluche favorito.</li>
-        </ul>
+   <section class="tamano">
+    <h2>Rutina de ✨✨MILO✨✨</h2>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                7:00 am
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Despertarse lleno de energía y salir a dar un paseo matutino por el parque.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              10:00 am
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Tiempo de juego: correr detrás de la pelota y explorar el jardín.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              2:00 pm
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Almuerzo ligero seguido de un paseo corto por el vecindario.</div>
+          </div>
+        </div>
+      </div>
+      
+   </section>
 
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <p>&copy; 2024 Mi Sitio Web</p>
+                <p>&copy; 2024 Milo Web</p>
             </div>
             <div class="footer-section">
                 <a href="#">Política de privacidad</a>
@@ -61,3 +92,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

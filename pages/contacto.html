@@ -3,71 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>✨✨Milo Web✨✨ </title>
 </head>
-<body>
-    <header>
-
-        <div class="logo">
-            <img src="../images/IMG_7.jpg" alt="Logo Milo">
-        </div>
-
-        <div>
-            <h1>✨✨MILO✨✨</h1>
-            <h2>Un torbellino de energía y ternura en cuatro patas</h2>
-        </div>    
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobremilo.html">Sobre Milo</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./rutina.html">Rutina</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-
+<header>
+    <h1>✨✨MILO✨✨ </h1>
+    <nav class="navbar navbar-expand-lg color">
+        <div class="container-fluid">
+          <a class="logo navbar-brand" href="#"><img  src="../images/IMG_5.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link btn-custom active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-custom" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-custom" href="sobremilo.html">Sobre Milo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-custom" href="rutina.html">Rutina</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-custom" href="contacto.html">Contacto</a>
+              </li>
+             
             </ul>
-
-        </nav>    
-
-    </header>
+          </div>
+        </div>
+      </nav>
+</header>
 <hr>
 <main>
+    <section>
     <h2>Contacto</h2>
-
-    <!-- Sección de Email -->
-    <section>
-        <h2>Email</h2>
-        <p>Para consultas, puedes escribirnos a: milo@gmail.com</p>
-        
-    </section>
-
-    <!-- Sección de Teléfono -->
-    <section>
-        <h2>Teléfono</h2>
-        <p>También puedes llamarnos al siguiente número: 123456789</p>
+    <form class="tamano row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Nacho" required>
+          <div class="valid-feedback">
+            Se ve bien!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Bien!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de Usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor cambia el usuario
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Pais</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Elegir..</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
        
-    </section>
-
-    <!-- Sección de Ubicación en Google Maps -->
-    <section>
-        <h2>Ubicación</h2>
-        <p>Encuentra nuestra ubicación en el mapa:</p>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508736!2d144.953736315316!3d-37.816279279751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43a5d3e7d1%3A0x1c2f0d0f0f0f0f!2sFederation%20Square%2C%20Melbourne%20VIC%203001%2C%20Australia!5e0!3m2!1sen!2ses!4v1600624240280!5m2!1sen!2ses"
-            width="250"
-            height="150"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Acepto terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+        </div>
+      </form>
     </section>
 </main>
 
 <footer>
     <div class="footer-content">
         <div class="footer-section">
-            <p>&copy; 2024 Mi Sitio Web</p>
+            <p>&copy; 2024 Milo Web</p>
         </div>
         <div class="footer-section">
             <a href="#">Política de privacidad</a>
@@ -76,3 +115,8 @@
         </div>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
