@@ -1,0 +1,11 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.tamano {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
